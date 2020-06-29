@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<title>Christopher Reid</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="instapp.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+   <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file w3-xxlarge"></i>
+    <p>RESUME</p>
+  </a>
+  <a href="#Tutoring" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-desktop w3-xxlarge"></i>
+    <p>TUTORING</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-paper-plane w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+	 <a href="#resume" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
+    <a href="#Tutoring" class="w3-bar-item w3-button" style="width:25% !important">	TUTORING</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Christopher Reid.</h1>
+    <p>Student and Programmer.</p>
+    <img src="instapp.jpg" alt="pic" class="w3-image" width="248" height="277">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Christopher Reid</h2>
+    <hr style="width: 270px" class="w3-opacity">
+    <p>Hey! I am 19 and am currently studying Computer Science at The University Of Surrey. I've got knowledge in many areas of the field but am yet to choose a paticular area to specialise in. I'm hoping to find this as I continue to learn the course.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Programming Language Skills</h3>
+    <p class="w3-wide">Java</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+	<p class="w3-wide">SQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div><br>
+	
+	<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="resume">
+    <h2 class="w3-text-light-grey">Experience</h2>
+	<hr style="width:200px" class="w3-opacity">
+	<h4 class="w3-text-light-grey">Reselling Business, Home</h4>
+	<h6 class="w3-text-light-grey">Founder</h6>
+    <p>I started reselling high demanded valuable items to earn a passive income while in my studies.
+	This taught me many skills about business management along with the accounts and spreadsheets needed to keep organized along with customer service skills.
+    </p>
+	<h4 class="w3-text-light-grey">BRE Group, Watford</h4>
+	<h6 class="w3-text-light-grey">Software Engineer</h6>
+    <p>Developing Software to implement a weather recording system on a MicroChip.
+	Assisting with employee hardware fixes and company software back-ups and security proxies and firewalls.
+    </p>
+	<h4 class="w3-text-light-grey">Collins Aerospace, Hatfield</h4>
+	<h6 class="w3-text-light-grey">Admin Assistant</h6>
+    <p>Assisting with spreadsheet development and file handling. 
+	Shop-floor (brakes and wheel mechanical engineering) health and safety assistant officer.
+    </p>
+	</div>
+	
+	<div>
+    <h2 class="w3-text-light-grey">Qualifiations</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<h4 class="w3-text-light-grey">University</h4>
+	<h6 class="w3-text-light-grey">Year 1</h6>
+    <p>Semester 1; 2:1
+    </p>
+	<h4 class="w3-text-light-grey">A-Levels</h4>
+    <p>Subjects : Mathematics, Physics and Computer Science
+    </p>
+	</div>
+	
+	<input type=button class="w3-button w3-light-grey w3-padding-large w3-section" onClick="parent.open('https://docs.google.com/document/d/1BeoStr7K27AJHoSQJnb9t_8dHMyDOJcmbNcm6tHOY-k/edit?usp=sharing')"  value='click here to view my resume' >
+
+
+ <div class="w3-content w3-justify w3-text-grey w3-padding-64" >
+    <h2 class="w3-text-light-grey">Some of my Projects</h2>
+	<hr style="width:310px" class="w3-opacity">
+	
+<div class="row">
+
+  <div class="column">
+	<div class="container" onClick="parent.open('https://github.com/ChrisNReid/University/tree/master/COM1032_CW_CR00657')"  target="_blank">
+		<img src="lights.jpg" class="image" "width:100%">
+			<div class="overlay">
+				<div class="text">Operating System Simulator</div>
+				</div>
+			</div>
+	</div>
+	
+	<div class="column">
+		<div class="container" onClick="parent.open('https://github.com/ChrisNReid/University/tree/master/COM1028%20CW%20-%20Software%20Engineering/coursework')" target="_blank">
+			<img src="softwareeng.jpg" class="image" "width:100%" >
+				<div class="overlay">
+					<div class="text">Software Engineering Coursework</div>
+					</div>
+				</div>
+		</div>
+		
+  <div class="column">
+	<div class="container" onClick="parent.open('https://github.com/ChrisNReid/University/tree/master/A-Level%20CompSci%20CW')" target="_blank">
+		<img src="download.jpg" class="image"  "width:100%" >
+			<div class="overlay">
+				<div class="text">Financial Management Program</div>
+				</div>
+			</div>
+	</div>
+</div>
+	<!--
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i>
+	  <a href = "https://docs.google.com/document/d/1BeoStr7K27AJHoSQJnb9t_8dHMyDOJcmbNcm6tHOY-k/edit?usp=sharing"> View Resume
+    </button>
+    -->
+    <!-- Grid for pricing tables -->
+	
+    <h2 class="w3-text-light-grey" id="Tutoring">Tutoring</h2>
+	<hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Tutoring in all areas</li>
+          <li class="w3-padding-16">Fast Response</li>
+          <li class="w3-padding-16">Remote teaching</li>
+          <li class="w3-padding-16">
+            <h2>£ 15</h2>
+            <span class="w3-opacity">per session</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Tutoring in all areas</li>
+          <li class="w3-padding-16">Fast Response</li>
+          <li class="w3-padding-16">Remote and in House teaching</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>£ 25</h2>
+            <span class="w3-opacity">per session</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+   
+    <!-- Testimonials 
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Anonymous.</span> Head of Phyiscs at TMSA.</p>
+    <p>.</p><br>
+    
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p>
+  <!-- End About Section -->
+
+  
+ <!-- First Photo Grid
+ <h2 class="w3-text-light-grey">Some of my projects</h2>
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="C:\Users\Chris\Documents\Career\Github.io website\lights.jpg" alt="os" style = "width=100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Operating System Simulator</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="C:\Users\Chris\Documents\Career\Github.io website\nature.jpg" alt="softeng" style = "width=100%" class="w3-hover-opacity column">
+      <div class="w3-container w3-white">
+        <p><b>Software Engineering Coursework</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container ">
+      <img src="C:\Users\Chris\Documents\Career\Github.io website\coffee.jpg" alt="financial" style = "width=100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Financial Management program</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> London, UK</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>​​<a href="mailto:christopherreid63@gmail.com">Email: christopherreid63@gmail.com</a></p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="C:\Users\Chris\Documents\Career\Github.io website\action.php" method ="post">
+      <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message">
+      
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer"w3-container w3-padding-64 -->
+	<div class="w3-padding-64 w3-content w3-text-grey" id="contact" align = "CENTER">
+    <h2 class="w3-text-light-grey" >Socials</h2>
+	
+	<footer class=" w3-center w3-opacity w3-xxxlarge">
+    <i class="fa fa-instagram w3-hover-opacity" onClick="parent.open('https://www.instagram.com/courageouschris/?hl=en')"></i> 
+	<i class="fa fa-linkedin w3-hover-opacity" onClick="parent.open('https://www.linkedin.com/in/christopher-reid-357004144/')"></i>
+  </footer>
+<!-- END PAGE CONTENT -->
+</div>
+ <p align = "CENTER" style = "font-size:15px">bye :)</p>
+ </div>
+</body>
+</html>
