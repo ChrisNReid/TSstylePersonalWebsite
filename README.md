@@ -5,5 +5,5 @@ Personal Website with links to CV, Tutoring and Jobs
 #2. Resume Page, using left link
 <img src="resume page.jpg" width="200">
 #3. Tutoring Page, using right link
-<img src="programmingg page.jpg" width="200">
+<img src="progammingpage.jpg" width="200">
 
